@@ -1,0 +1,14 @@
+Description: Do not build the demo
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: not-needed
+--- a/build.xml
++++ b/build.xml
+@@ -122,8 +122,6 @@
+          <src path="${java.src.drag}"/>
+          <src path="${java.src.perspective}"/>
+       </javac>
+-      <javac classpathref="javac.classpath.demo" srcdir="${java.src.demo}" destdir="${bin.dir.demo}" debug="true" source="1.5" target="1.5" includeAntRuntime="no"/>
+-      <javac classpathref="javac.classpath.test" srcdir="${java.src.test}" destdir="${bin.dir.test}" debug="true" source="1.5" target="1.5"  includeAntRuntime="no"/>
+    </target>
+ 
+ 
